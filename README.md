@@ -53,4 +53,15 @@ For sample testing/prediction, you can run-
 ```
 $ python predict.py
 ```
+
 There is a pre-trained checkpoint available in the repo. You may use it for sample testing or create your own after training as needed. The results are generated (by default) for the data present in `./data/test/low/` folder, and the results are saved (by default) in `./results/test/low/` folder. 
+Noticed that ckpt of Restore is in release, please download from latest release.
+
+### Results FYI:
+* MyKinD：**MSE** = 0.899  **SSIM** = 0.798 **PSNR** = 19.89 **LPIPS** =  0.138
+	* Net：MyKinD
+	* train dataset：LOL，test dataset：LOL
+	* Decom: 1000, lr=0.0001, batchsize = 16，patchsize = 96
+	* Restore: 1000, lr = 0.0001, batchsize = 4，patchsize = 384
+	* Relight: 1000, lr = 0.0001, batchsize = 16，patchsize = 96
+
